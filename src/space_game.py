@@ -10,6 +10,7 @@ from rocket_animation import rocket
 from star_animation import blink
 
 TIC_TIMEOUT = 0.1
+STARS_COUNT = 100
 
 
 def load_frame(path: Path):
@@ -34,7 +35,7 @@ def draw(canvas):
               column=random.randint(1, columns - 1),
               symbol=random.choice('+*.:'),
               delay=random.randint(1, 10)
-              ) for _ in range(100)
+              ) for _ in range(STARS_COUNT)
     ]
     coroutines.append(
         rocket(
