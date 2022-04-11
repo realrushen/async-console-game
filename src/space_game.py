@@ -6,7 +6,6 @@ import time
 from itertools import cycle
 from pathlib import Path
 
-from fire_animation import fire
 from rocket_animation import rocket
 from star_animation import blink
 
