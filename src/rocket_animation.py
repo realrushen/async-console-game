@@ -7,8 +7,7 @@ from curses_tools import draw_frame, read_controls, get_frame_size
 async def rocket(canvas, start_row, start_column, frames, speed=1):
     """Display animation of rocket, speed can be specified."""
     rows, columns = curses.window.getmaxyx(canvas)
-    while True:
-        frame = next(frames)
+    for frame in frames:
 
         start_column, start_row = update_position(canvas, columns, frame, rows, speed, start_column, start_row)
 

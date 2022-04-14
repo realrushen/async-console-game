@@ -11,17 +11,12 @@ from star_animation import blink
 
 TIC_TIMEOUT = 0.1
 STARS_COUNT = 100
-
-
-def load_frame(path: Path):
-    path.resolve()
-    with path.open(mode='r', encoding='utf-8') as f:
-        return f.read()
+MAX_DELAY = 10
 
 
 def draw(canvas):
-    rocket_frame_1 = load_frame(Path('./frames/rocket_frame_1.txt'))
-    rocket_frame_2 = load_frame(Path('./frames/rocket_frame_2.txt'))
+    rocket_frame_1 = Path('./frames/rocket_frame_1.txt').read_text(encoding='utf-8')
+    rocket_frame_2 = Path('./frames/rocket_frame_2.txt').read_text(encoding='utf-8')
     rocket_frames = cycle([rocket_frame_1, rocket_frame_2])
 
     curses.curs_set(False)
@@ -34,7 +29,7 @@ def draw(canvas):
               row=random.randint(1, rows - 1),
               column=random.randint(1, columns - 1),
               symbol=random.choice('+*.:'),
-              delay=random.randint(1, 10)
+              delay=random.randint(1, MAX_DELAY)
               ) for _ in range(STARS_COUNT)
     ]
     coroutines.append(
