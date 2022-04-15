@@ -1,6 +1,7 @@
 # Spaceship Advanture
 
-GIF HERE
+![ezgif com-optimize_YgtCKU0](https://user-images.githubusercontent.com/58989626/163606248-8900068e-b5ba-4873-b957-00e2f9917374.gif)
+
 
 ## Introduction
 
