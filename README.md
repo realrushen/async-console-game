@@ -12,7 +12,7 @@ And also uses self wrote super simple event loop to better understand acync.
 
 ## How to Install and Run
 
-Make shure you have installed [Python 3.9](https://www.python.org/downloads/release/python-390/)
+Make sure you have installed [Python 3.9](https://www.python.org/downloads/release/python-390/)
 
 
 1. Clone repository.
