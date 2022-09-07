@@ -1,4 +1,4 @@
-# Spaceship Advanture
+# Spaceship Adventure
 
 ![ezgif com-optimize_YgtCKU0](https://user-images.githubusercontent.com/58989626/163606248-8900068e-b5ba-4873-b957-00e2f9917374.gif)
 
@@ -8,7 +8,7 @@
 This project was done during a module on learning
 asynchronous programming in python. It uses curses standard python
 library module to render game scene using different text symbols. 
-And also uses self wrote super simple event loop to better understand acync.
+And also usess self wrote super simple event loop to better understand async.
 
 ## How to Install and Run
 
